@@ -86,7 +86,7 @@ article h1 {
     gap: var(--content-gap);
 }
 
-#palindrome-text {
+#text-input {
     margin-top: .5rem;
     padding: 1rem;
     font-size: var(--text-l);
@@ -99,17 +99,17 @@ article h1 {
     margin: 0 auto;
 }
 
-#palindrome-btn {
+#check-btn {
     align-self: center;
     padding: .5em 1em;
     font-size: var(--text-m);
     border-radius: var(--radius);
     border: none;
-    background-color: var(--primary);
+    background-color: var(--light);
     transition: .2s all ease-in-out;
 }
 
-#palindrome-btn:hover {
-    background-color: var(--light);
+#check-btn:hover {
+    background-color: var(--primary);
     cursor: pointer;
 }
