@@ -1,0 +1,115 @@
+/* GLOBAL */ 
+
+:root {
+    --bg: hsla(240, 57%, 9%, 1);
+    --bg-gradient: linear-gradient(221deg, hsla(240, 57%, 20%, 0.7), hsla(240, 57%, 20%, 0.3));
+    --light: rgb(255, 255, 255, 1);
+    --light-trans-50: rgb(255, 255, 255, .5);
+    --light-trans-20: rgb(255, 255, 255, .2);
+    --light-trans-5: rgb(255, 255, 255, .05);
+    --radius: 2em;
+    --text-xl: calc(var(--text-m) * 2);
+    --text-l: calc(var(--text-m) * 1.5);
+    --text-m: 2rem;
+    --content-gap: 1.5rem;
+    --primary: hsl(41, 81%, 63%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+    font-size: var(--text-xl);
+}
+
+p, label {
+    font-size: var(--text-m);
+}
+
+/* CONTENT */
+
+body {
+    background-color: var(--bg);
+    color: var(--light);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#logo {
+    width: 100%;
+    max-height: 3rem;
+}
+
+article {
+    width: 60rem;
+    background: var(--bg-gradient);
+    padding: 4rem 3rem;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    gap: var(--content-gap);
+}
+
+article h1 {
+    text-align: center;
+}
+
+.palindrome-form {
+    margin-top: 1.5rem;
+    padding: 2rem;
+    border: .1rem solid var(--light-trans-20);
+    border-radius: calc(var(--radius) * 0.5);
+}
+
+.palindrome-form form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--content-gap);
+}
+
+#palindrome-text {
+    margin-top: .5rem;
+    padding: 1rem;
+    font-size: var(--text-l);
+    background-color: unset;
+    border: none;
+    border-bottom: .05em solid var(--primary);
+    color: var(--light);
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#palindrome-btn {
+    align-self: center;
+    padding: .5em 1em;
+    font-size: var(--text-m);
+    border-radius: var(--radius);
+    border: none;
+    background-color: var(--primary);
+    transition: .2s all ease-in-out;
+}
+
+#palindrome-btn:hover {
+    background-color: var(--light);
+    cursor: pointer;
+}
