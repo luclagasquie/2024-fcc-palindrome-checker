@@ -21,9 +21,6 @@ const getInput = () => {
     } else {
         result.innerText = `${inputValue} is not a palindrome`;
     }
-    
-    console.log(cleanValue);
-    console.log(reverseValue);
 }
 
 checkBtn.addEventListener("click", getInput);
